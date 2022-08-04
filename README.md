@@ -1,5 +1,4 @@
-# An Overview of the project
-
+# Team Nodes
 One of the major problems young blockchain developers face is they lack a platform that showcases decentralized applications or they dont know how to reach out to communities to try out their projects and the solution to this problem has been created by Team Nodes, which is the introduction of our platform named "D-Nodes"
 
 ## Tools
@@ -17,8 +16,6 @@ The D-Nodes Dapp is a platform hosted on IPFS which also hosts multiple dapps th
 - An Event Ticketing system
 - A Decentralized Storage System
 - A Land Ownership Register(Landgister)
--
-
 ## Event Ticketing system
 
 ### Why we need An Event Ticketing System
@@ -38,25 +35,25 @@ The event tickecting dapp helps entities create events or customers buy ticket f
 
 ### What a Customer can Do
 
-Buy tickets
+1. Buy tickets
 
-- Ticket sale must be open
-- The number of tickets requested must be available
-- A customer can buy any amount of tickets up to the maximum per customer allowed by owner (if the owner has set a limit)
-- The customer must transfer at least the amount equal to number of tickets requested multiplied by the ticket price
-- The customer is stored if accepted (address and number of tickets)
-- Excess amount is returned to sender
+    - Ticket sale must be open
+    - The number of tickets requested must be available
+    - A customer can buy any amount of tickets up to the maximum per customer allowed by owner (if the owner has set a limit)
+    - The customer must transfer at least the amount equal to number of tickets requested multiplied by the ticket price
+    - The customer is stored if accepted (address and number of tickets)
+    - Excess amount is returned to sender
 
-Return tickets
+2. Return tickets
 
-- Rejects if buyback or sale is disabled
-- Rejects if deadline is passed
-- Returns the total amount the sender has previously paid to the contract-
-- Deletes all tickets owned by sender and adds them to available tickets
+    - Rejects if buyback or sale is disabled
+    - Rejects if deadline is passed
+    - Returns the total amount the sender has previously paid to the contract-
+    - Deletes all tickets owned by sender and adds them to available tickets
 
-Generate Tickets Id
+3. Generate Tickets Id
 
-- based on data enterd a hash is generated to identify a ticket.
+    - based on data enterd a hash is generated to identify a ticket.
 
 A customer can get their Id and available tickets
 
@@ -71,10 +68,11 @@ Centralized storage systems hold your data in large servers and that is a single
 The project consists in a decentralized storage system, being kind of a Dropbox but in a more decentralized manner. It allows the user to upload a file to a decentralized system called IPFS (Inter Planetary File System), sharing it with anyone who knows the hash identifier.
 
 - Select a file
-  The user can select a file from his local machine and type a description on the description input section.
+    - The user can select a file from his local machine and type a description on the description input section.
 - Upload a file
-  Once the user has selected the file he wants to upload, then he must click on the UPLOAD FILE button. At this point, Metamask will ask for a confirmation, and once confirmed, the user will pay an small fee to record the following on the blockchain: Name, Description, Type, Size, Date, Uploader and Hash.The file is then uploaded to the IPFS.
-- Only you can access you files(using your address).
+    - Once the user has selected the file he wants to upload, then he must click on the UPLOAD FILE button. At this point, Metamask will ask for a confirmation, and once confirmed, the user will pay an small fee to record the following on the blockchain: Name, Description, Type, Size, Date, Uploader and Hash.The file is then uploaded to the IPFS.
+
+- Only you can access your files(using your account).
 - You can delete, edit, view and see dating in regard to your file.
 
 ## Land Ownership Register
@@ -90,41 +88,41 @@ a mixture of OnChain/Off-Chain solution.
 
 # Contract Interface
 
-- register()
-  A function which registers the details and mints an ERC-721 token open succesful registration.
+1. register()
+     - A function which registers the details and mints an ERC-721 token open succesful registration.
 
--viewAssets()
-A function that returns the assets owned by a user.
+2. viewAssets()
+     - A function that returns the assets owned by a user.
 
--makeAvailable()
-A function which makes a registered land available for purchase.
+3. makeAvailable()
+    - A function which makes a registered land available for purchase.
 
--purchaseland()
-A function which lets a interested party securely purchase the land.
+4. purchaseland()
+    - A function which lets a interested party securely purchase the land.
 
--withdraw()
-A function that lets seller withdraw their funds.
+5. withdraw()
+    - A function that lets seller withdraw their funds.
 
--removeOwnership()
-A function that removes and changes ownership
+6. removeOwnership()
+    - A function that removes and changes ownership
 
--owner()
-A function that returns the owner of a land.
+7.  owner()
+    - A function that returns the owner of a land.
 
 ### Team Members
 
--Abdulsamad Otaiki Sadiq(Frontend developer and Blockchain developer)
--Roberts Faith (Frontend Developer)
--Godwin Boniface (Blockchain Developer)
--Salihu Abdulaziz (Blockchain Developer)
--Haruna Josiah (Blockchain Developer)
+1. Abdulsamad Otaiki Sadiq(Frontend developer and Blockchain developer)
+2. Roberts Faith (Frontend Developer)
+3. Godwin Boniface (Blockchain Developer)
+4. Salihu Abdulaziz (Blockchain Developer)
+5. Haruna Josiah (Blockchain Developer)
 
-### Check Out this projetc either via the ipfs hash or Through this link
+### Check Out this project either via the ipfs hash or Through this link
 
 
--https://dnodes.on.fleek.co/
+- [DNodes](https://dnodes.on.fleek.co/)
 (Note that fleek serves as a node  for running ipfs)
--The IPFS hash is : QmceEoS531mco6wCpAfHLPBQ7Rf4KpGbde2mQ3shHrXXak/
+- The IPFS hash is : [QmceEoS531mco6wCpAfHLPBQ7Rf4KpGbde2mQ3shHrXXak/]()
 
 ### Note that this Project is still undergoing maintenance and is not production ready
 
@@ -132,5 +130,5 @@ A function that returns the owner of a land.
 - Only the contract address is available for the file storage as it is still a work in progress
 - The landGister dapp is live and fully operational on the rinkeby testnet.
 - The smart ticketing UI is still a work in progress and the contract is live on rinkeby testnet
-- The codebase for all the other feature dapps are located in the featureDapps directory
+
 
